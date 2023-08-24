@@ -1,0 +1,980 @@
+/* Header */
+body {
+  /* background-color: #212121; */
+  /* background: url("image/phone-back.jpeg"); */
+  color: #e8e8e8;
+  
+}
+
+body.dark-mode {
+  
+  color: #212121;
+  height: 100%;
+  /* background: url("image/phone-back.jpeg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #212121;
+}
+
+.place {
+  color: black;
+  font-size: large;
+}
+
+@media screen and (min-width: 1500px) {
+  #kitchen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: url("image/kitchen\ app.jpeg");
+    color: #e8e8e8;
+    margin-bottom: 30px;
+  }
+
+  #kitchen > h1 {
+    font-size: 40px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 900;
+    margin-top: 35px;
+    margin-left: 10px;
+    color: #e8e8e8;
+  }
+
+  #kitchen > div:nth-child(3):hover {
+    cursor: pointer;
+  }
+
+  .ok {
+    padding: 50px 0px 0px 20px;
+  }
+
+  #kitchen > div:nth-child(3) {
+    padding: 50px 0px 0px 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    cursor: pointer;
+  }
+
+  #kitchen > div > input {
+    border-radius: 60px;
+    color: #212121;
+    height: 60px;
+    background-color: lightgray;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: large;
+    margin-top: 35px;
+    margin-left: 450px;
+    width: 400px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(1) {
+    border-radius: 60px;
+    margin-top: 45px;
+    font-size: 25px;
+    width: 100px;
+    margin-left: 5px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(2) {
+    margin-top: 45px;
+    background-color: red;
+    color: #e8e8e8;
+    border-radius: 60px;
+    font-size: 25px;
+    width: 150px;
+    margin-left: 5px;
+  }
+
+  #mybutton {
+    height: 30px;
+    width: auto;
+  }
+
+  #mybutton:hover {
+    cursor: pointer;
+  }
+
+  .container,
+  .item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background: url("image/phone-back-3.jpg"); */
+  }
+
+  .container > h1,
+  h1,
+  #placeName {
+    font-size: 70px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    color:grey;
+    font-weight: "Black 800";
+  }
+
+  .card {
+    margin-top: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    width: 22rem;
+    height: 25rem;
+    margin: 40px 10px 40px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    align-items: flex-start;
+    opacity: 0.9;
+  }
+
+  item:hover .card:not(:hover) {
+    opacity: 0.3;
+  }
+
+  .card-img-top {
+    width: auto;
+    height: 20rem;
+    transition: all 0.3s;
+    padding: 20px 20px 20px 20px;
+    border-radius: 64px;
+  }
+
+  .item > .card > button {
+    border-radius: 60px;
+    width: auto;
+    height: 20px;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-weight: 500;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.35s;
+  }
+
+  .row2 {
+    margin-top: 20px;
+  }
+
+  .see-more {
+    margin: 50px 0px 10px 0px;
+    width: 200px;
+    font-size: 22px;
+    opacity: 0.7;
+    border-radius: 60px;
+  }
+
+  #placeName {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    border-top: 5px dotted red;
+    width: 0%;
+    background-color: #e8e8e8;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .restraunts {
+    border: 2px solid yellow;
+    color: gray;
+    width: 22rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 30px 20px 20px 0px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37rem;
+    border-radius: 32px 64px;
+    border: 1px solid grey;
+    transition: all 0.4s;
+    /* background-color: white; */
+    opacity: 0.9;
+    font-weight: 600;
+  }
+
+  .restraunts:hover {
+    scale: 0.9;
+  }
+
+  .res-img {
+    width: 22rem;
+    height: 17rem;
+    transition: all 0.3s;
+    padding: 20px 20px 20px 20px;
+    border-radius: 32px 64px;
+    opacity: 1;
+  }
+
+  .detail {
+    padding: 0px 0px 0px 40px;
+  }
+
+  .detail > .title {
+    margin-top: 20px;
+  }
+
+  .detail > p {
+    font-weight: 600;
+  }
+
+  .detail > a > button {
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 23px;
+  }
+
+  .get-app {
+    background-color: grey;
+    z-index: 2;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-auto-rows: 700px;
+    border-radius: 64px;
+    border-bottom: 2px solid gray;
+    margin-top: 50px;
+    background: url("image/bg-5.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .left {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 10%;
+  }
+
+  .left > h3 {
+    font-size: 90px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color:midnightblue;
+    font-weight: "Black 800";
+    justify-content: center;
+    padding-top: 30%;
+  }
+
+  .right > img {
+    transform: rotateZ(15deg);
+  }
+
+  .android,
+  .ios {
+    border-radius: 10px;
+    font-size: 40px;
+    width: 200px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-left: 20px;
+    font-weight: 500;
+    transform: all 0.4s;
+  }
+
+  .android {
+    background-color: white;
+  }
+
+  .ios {
+    color: white;
+    background-color: black;
+  }
+  .ios>img{
+    position: relative;
+    bottom: 5px;
+    right: 10px;
+  }
+
+  .android:hover,
+  .ios:hover {
+    color: white;
+    background-color: rgb(92, 92, 211);
+  }
+
+  .footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Alegreya Sans SC", sans-serif;
+  }
+
+  .idhar {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 7%;
+  }
+
+  .idhar > h3 {
+    padding-top: 2%;
+    padding-left: 5%;
+    color: white;
+    justify-content: flex-end;
+  }
+
+  .idhar > div {
+    color: white;
+    padding-left: 5%;
+    font-size: x-small;
+    opacity: 0.4;
+    padding-top: 3%;
+  }
+
+  .udar {
+    padding: 6% 7%;
+  }
+
+  .footer > .udar > img {
+    width: 30px;
+    color: white;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 500px) {
+  #kitchen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  #kitchen > h1 {
+    font-size: 40px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 900;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+  #kitchen > div:nth-child(3):hover {
+    cursor: pointer;
+  }
+
+  .ok {
+    padding: 50px 0px 0px 20px;
+  }
+
+  #kitchen > div:nth-child(3) {
+    padding: 50px 0px 0px 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    cursor: pointer;
+  }
+
+  #kitchen > div > input {
+    border-radius: 60px;
+    color: #212121;
+    height: 60px;
+    background-color: lightgray;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: large;
+    margin-top: 35px;
+    max-width: 200px;
+    margin-left: 30px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(1) {
+    border-radius: 60px;
+    margin-top: 45px;
+    font-size: 25px;
+    width: 100px;
+    margin-left: 5px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(2) {
+    margin-top: 45px;
+    background-color: red;
+    color: #e8e8e8;
+    border-radius: 60px;
+    font-size: 25px;
+    width: 100px;
+    margin-left: 5px;
+  }
+
+  #mybutton {
+    height: 30px;
+    width: auto;
+  }
+
+  #mybutton:hover {
+    cursor: pointer;
+  }
+
+  .container,
+  .item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .container > h1,
+  h1,
+  #placeName {
+    font-size: 60px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    color: #777;
+    font-weight: "Black 800";
+  }
+
+  .card {
+    margin-top: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    width: 17rem;
+    height: 19rem;
+    margin: 40px 10px 40px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    align-items: flex-start;
+  }
+
+  item:hover .card:not(:hover) {
+    opacity: 0.3;
+  }
+
+  .card-img-top {
+    width: auto;
+    height: 22rem;
+    transition: all 0.3s;
+    padding: 20px 20px 20px 20px;
+    border-radius: 64px;
+  }
+
+  .item > .card > button {
+    border-radius: 60px;
+    width: auto;
+    height: 20px;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-weight: 500;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.35s;
+  }
+
+  .row2 {
+    margin-top: 20px;
+  }
+
+  .see-more {
+    margin: 50px 0px 10px 0px;
+    width: 200px;
+    font-size: 22px;
+    opacity: 0.7;
+    border-radius: 60px;
+  }
+
+  #placeName {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    border-top: 5px dotted red;
+    width: 0%;
+    background-color: #e8e8e8;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .restraunts {
+    border: 2px solid black;
+    color: gray;
+    width: 17rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 30px 20px 20px 0px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    border-radius: 32px 64px;
+    border: 1px solid grey;
+    transition: all 0.4s;
+  }
+
+  .restraunts:hover {
+    scale: 0.9;
+  }
+
+  .res-img {
+    width: 17rem;
+    height: 12rem;
+    transition: all 0.3s;
+    padding: 20px 20px 20px 20px;
+    border-radius: 32px 64px;
+  }
+
+  .detail {
+    padding: 0px 0px 0px 40px;
+  }
+
+  .detail > .title {
+    margin-top: 20px;
+  }
+
+  .detail > p {
+    font-weight: 600;
+  }
+
+  .detail > a > button {
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 500px) {
+  body {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body.dark-mode {
+    background-color: #212121;
+    color: #212121;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #kitchen {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    margin-bottom: 40px;
+    color: dimgrey;
+    background-color: #e8e8e8;
+    width: 100%;
+  }
+
+  hr {
+    width: 35%;
+    border: 2px dotted solid red;
+  }
+
+  #kitchen > h1 {
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: "Bold 700";
+    padding-top: 35px;
+    margin-left: 30px;
+    color: dimgrey;
+  }
+
+  #kitchen > div:nth-child(3):hover {
+    cursor: pointer;
+  }
+
+  #kitchen > div:nth-child(2) {
+    display: none;
+  }
+
+  #kitchen > div:nth-child(3) {
+    margin-left: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-top: 10px;
+  }
+
+  #kitchen > div > input {
+    border-radius: 60px;
+    color: #212121;
+    height: 60px;
+    background-color: lightgray;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: large;
+    margin-top: 20px;
+    width: 300px;
+    /* object-fit: fill; */
+    margin-left: 20px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(1) {
+    border-radius: 60px;
+    margin-top: 30px;
+    font-size: 25px;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(2) {
+    margin-top: 30px;
+    background-color: red;
+    color: #e8e8e8;
+    border-radius: 60px;
+    font-size: 25px;
+    width: 150px;
+  }
+
+  #mybutton {
+    height: auto;
+    width: 30px;
+    margin-bottom: 5px;
+  }
+
+  #mybutton:hover {
+    cursor: pointer;
+  }
+
+  .item {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .container > h1,
+  h1,
+  #placeName {
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    color: red;
+    font-weight: "Black 800";
+  }
+
+  .card {
+    margin-top: 50px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    width: 18rem;
+    height: 20rem;
+    margin: 40px 100px 40px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  item:hover .card:not(:hover) {
+    opacity: 0.3;
+  }
+
+  .card:hover {
+    scale: 1.1;
+  }
+
+  .card-img-top {
+    width: 22rem;
+    height: 24rem;
+    margin: 0px 20px 0px 0px;
+    padding: 20px 20px 0px 20px;
+    transition: all 0.3s;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-weight: 500;
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+
+  .row2 {
+    margin-top: 20px;
+  }
+
+  .see-more {
+    margin: 10px 0px 20px 0px;
+    width: 200px;
+    font-size: 22px;
+    opacity: 0.2;
+    border-radius: 60px;
+  }
+
+  .line {
+    border-top: 5px dotted darkred;
+    width: 10%;
+    background-color: white;
+  }
+
+  #placeName {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    border-top: 5px dotted red;
+    width: 0%;
+    background-color: #e8e8e8;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .restraunts {
+    border: 2px solid black;
+    color: gray;
+    width: 18rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 30px 20px 20px 0px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    border-radius: 64px 32px;
+    border: 1px solid lightsteelblue;
+  }
+
+  .res-img {
+    width: 15rem;
+    height: 10rem;
+    transition: all 0.3s;
+    padding: 20px 20px 20px 20px;
+    border-radius: 32px 64px;
+  }
+
+  .detail {
+    padding: 0px 0px 0px 40px;
+  }
+
+  .detail > .title {
+    margin-top: 20px;
+  }
+
+  .detail > p {
+    font-weight: 600;
+  }
+
+  .detail > a > button {
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 23px;
+    transition: all 0.3s;
+  }
+
+  .detail > a > button:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  body {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body.dark-mode {
+    background-color: #212121;
+    color: #212121;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #kitchen {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    margin-bottom: 40px;
+    color: dimgrey;
+    background-color: #e8e8e8;
+    width: 100%;
+  }
+
+  hr {
+    width: 35%;
+    border: 2px dotted solid red;
+  }
+
+  #kitchen > h1 {
+    font-size: 40px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: "Bold 700";
+    margin-top: 35px;
+    margin-left: 10px;
+    color: dimgrey;
+  }
+
+  #kitchen > div:nth-child(3):hover {
+    cursor: pointer;
+  }
+
+  #kitchen > div:nth-child(2) {
+    display: none;
+  }
+
+  #kitchen > div:nth-child(3) {
+    margin-left: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-top: 10px;
+  }
+
+  #kitchen > div > input {
+    border-radius: 60px;
+    color: #212121;
+    height: 60px;
+    background-color: lightgray;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: large;
+    margin-top: 20px;
+    width: 250px;
+    /* object-fit: fill; */
+    margin-left: 3px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(1) {
+    border-radius: 60px;
+    margin-top: 30px;
+    font-size: 25px;
+    width: 0px;
+    margin-left: 3px;
+  }
+
+  #kitchen > div:nth-child(5) > button:nth-child(2) {
+    margin-top: 30px;
+    background-color: red;
+    color: #e8e8e8;
+    border-radius: 60px;
+    font-size: 25px;
+    width: 100px;
+  }
+
+  #mybutton {
+    height: auto;
+    width: 20px;
+    margin-bottom: 5px;
+  }
+
+  #mybutton:hover {
+    cursor: pointer;
+  }
+
+  .item {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .container > h1,
+  h1 {
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    color: red;
+    font-weight: "Black 800";
+  }
+
+  .card {
+    margin-top: 50px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    width: 16rem;
+    height: 16rem;
+    margin: 40px 100px 40px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  item:hover .card:not(:hover) {
+    opacity: 0.3;
+  }
+
+  .card:hover {
+    scale: 1.1;
+  }
+
+  .card-img-top {
+    width: 22rem;
+    height: 24rem;
+    margin: 0px 20px 0px 0px;
+    padding: 20px 20px 0px 20px;
+    transition: all 0.3s;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-weight: 500;
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+
+  .row2 {
+    margin-top: 20px;
+  }
+
+  .see-more {
+    margin: 10px 0px 20px 0px;
+    width: 200px;
+    font-size: 22px;
+    opacity: 0.2;
+    border-radius: 60px;
+  }
+
+  .line {
+    border-top: 5px dotted darkred;
+    width: 10%;
+    background-color: white;
+  }
+}

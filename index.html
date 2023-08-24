@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Foodie</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alex+Brush&family=Alkatra:wght@400;500;600&family=Allura&family=Amita:wght@400;700&family=Bad+Script&family=Basic&family=Berkshire+Swash&family=Bruno+Ace&family=Caveat+Brush&family=Great+Vibes&family=Italianno&family=Klee+One:wght@600&family=Merriweather:ital,wght@0,300;1,400;1,700&family=Mogra&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Playball&family=Rancho&family=Rouge+Script&family=Rubik+Marker+Hatch&family=Sacramento&family=Secular+One&family=Sono:wght@500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss"
+    />
+    <link rel="stylesheet" href="styles/application.css" />
+    <link rel="stylesheet" href="styles/intro.css" />
+    <link rel="stylesheet" href="styles/admmin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="image/favicon.ico" />
+    
+  </head>
+
+  <body>
+    <div id="kitchen">
+      <h1>The Aanya's Kitchen</h1>
+      <div class="ok">|</div>
+      <div>
+        <img
+          width="24"
+          height="24"
+          src="image/placeholder.png"
+          alt="place-marker--v1"
+        />
+        Location
+      </div>
+      <div>
+        <input placeholder="Search for Restaurant or food" name="name" type="text" list="input"/>
+      </div>
+      <div>
+        <button>Login</button>
+        <button>Sign up</button>
+        <img id="mybutton" onclick="myFun()" src="image/dark-mode.png" alt="dark-mode-button">
+      </div>
+    </div>
+    <center>
+      <hr class="line" />
+    </center>
+    <div class="container">
+      <h1>What do you want to have today?</h1>
+      <div class="item">
+        <div class="card">
+          <img src="image/burgir.webp" class="card-img-top" alt="burger" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Burger</h5>
+            <p class="card-text col-3">₹60</p>
+            <p>Rating:⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/dosa.jpg" class="card-img-top" alt="dosa" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Dosa</h5>
+            <p class="card-text col-3">₹60</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/pizza.jpg" class="card-img-top" alt="pizza" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Pizza</h5>
+            <p class="card-text col-3">₹120</p>
+            <p>Rating: ⭐4</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/roll.jpg" class="card-img-top" alt="roll" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Roll</h5>
+            <p class="card-text col-3">₹60</p>
+            <p>Rating: ⭐2</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/ice-cream.jpg" class="card-img-top" alt="ice-cream" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Ice Cream</h5>
+            <p class="card-text col-3">₹60</p>
+            <p>Rating: ⭐4</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/sandwich.jfif" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Sandwich</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/burger.jpg" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Burger</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/chowmein.webp" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Chowmein</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/pasta.jpg" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Pasta</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/maggi.jpg" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Maggi</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="image/paneer-tikka.jpg"
+            class="card-img-top"
+            alt="sandwich"
+          />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Paneer Tikka</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/momos.webp" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Momos</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/veg-thali.jpg" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Veg Thali</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/fries.jpg" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">French fries</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/coke.avif" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Coke</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/pepsi.webp" class="card-img-top" alt="sandwich" />
+          <div class="card-body row">
+            <h5 class="card-title col-9">Pepsi</h5>
+            <p class="card-text col-3">₹50</p>
+            <p>Rating: ⭐3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <center><button class="see-more">See more <img style=" width:30px;"src="image/down.png"/></button></center> -->
+    <center>
+      <hr class="line" />
+    </center>
+    <h1 id="placeName">Where do you want to go?</h1>
+    <div class="menu container">
+      <div class="restraunts">
+        <center>
+          <img class="res-img" src="image/pizza-hut.png" alt="pizza hut" />
+        </center>
+        <div class="detail">
+          <h1 class="title">Pizza Hut</h1>
+          <p>Rating: ⭐4.5</p>
+          <p>Cuisines: Pizzas, Slides, Desserts, Drinks</p>
+          <h6>
+            Address: Showroom No 5, GF, GT Central Mall, Malviya Nagar, Jaipur,
+            Rajasthan 302017
+          </h6>
+          <a
+            href="https://restaurants.pizzahut.co.in/pizza-hut-malviya-nagar-pizza-restaurant-malviya-nagar-jaipur-44211/Home?utm_source=locator&utm_medium=googleplaces"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts">
+        <img class="res-img" src="image/dominos.png" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">Dominos</h1>
+          <p>Rating: ⭐4.5</p>
+          <p>Cuisines: Pizzas, Slides, Desserts, Drinks</p>
+          <h6>
+            Address: Plot No. 4, GT Central Mall Showroom No. 9, Indira Gandhi
+            Marg, Malviya Nagar, Jaipur, Rajasthan 302017
+          </h6>
+          <a
+            href="https://pizzaonline.dominos.co.in/?src=google_sem_brand&utm_source=google&utm_medium=cpc&utm_campaign=Brand-PanIndia-Desktop-Exact-2016-S&gclid=Cj0KCQjwuNemBhCBARIsADp74QQdWgE1oZdmEsD6XkhdmQfD6yjX_uN0U2rbu0VcW74NH-R4zDXHu_EaAqMgEALw_wcB"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts">
+        <img class="res-img" src="image/the laate.webp" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">Cafe Lazy Mojo</h1>
+          <p>Rating: ⭐4.2</p>
+          <p>Cuisines: Mexican, Italian, Continental</p>
+          <h6>
+            Address: 8/9, Station Road, Kanti Nagar, Sindhi Camp, Jaipur,
+            Rajasthan 302016
+          </h6>
+          <a href="https://www.zomato.com/jaipur/cafe-lazymojo-malviya-nagar"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts">
+        <img class="res-img" src="image/Jaipur-Adda.webp" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">Jaipur-Adda</h1>
+          <p>Rating: ⭐3</p>
+          <p>Cuisine: Modern Indian</p>
+          <h6>
+            Address: 8/9, Station Road, Kanti Nagar, Sindhi Camp, Jaipur,
+            Rajasthan 302016
+          </h6>
+          <a href="http://www.jaipuradda.com/"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts">
+        <img class="res-img" src="image/The-Rajput-Room.webp" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">The Rajput Room</h1>
+          <p>Rating: ⭐3.7</p>
+          <p>Cuisines: North Indian, Continental, Asian</p>
+          <h6>
+            Address: Rambagh Palace, Bhawani Singh Road, Rambagh, Jaipur,
+            Rajasthan 302005
+          </h6>
+          <a
+            href="https://www.tajhotels.com/en-in/taj/rambagh-palace-jaipur/restaurants/the-rajput-room-restaurant/"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts">
+        <img class="res-img" src="image/RJ-14.webp" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">RJ-14</h1>
+          <p>Rating: ⭐4</p>
+          <p>Cuisines: North Indian, South Indian</p>
+          <h6>
+            Address: Plot No 132, 133, 151, Ajmer Road, Opposite IndusInd Bank,
+            Ajmera Garden, DCM, Jaipur, Rajasthan 302019
+          </h6>
+          <a href="https://www.zomato.com/jaipur/rj-14-ajmer-highway"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts newCard">
+        <img class="res-img" src="image/handi-jaipur.webp" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">handi-jaipur</h1>
+          <p>Rating: ⭐3.7</p>
+          <p>Cuisines: North Indian, Mughlai, Kebab</p>
+          <h6>Address: Maya Mansion, Opposite GPO, MI Road, Jaipur</h6>
+          <a href="https://www.zomato.com/jaipur/handi-restaurant-mi-road"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts newCard">
+        <img class="res-img" src="image/Tapri-Central.webp" alt="pizza hut" />
+        <div class="detail">
+          <h1 class="title">Tapri-Central</h1>
+          <p>Rating: ⭐4.7</p>
+          <p>Cuisines: Café, Fast Food</p>
+          <h6>
+            Address: B4-E, Prithviraj Road, Opposite Central Park Gate No. 4,
+            C-Scheme, Jaipur, Rajasthan 302001
+          </h6>
+          <a href="https://www.zomato.com/jaipur/tapri-central-c-scheme"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+      <div class="restraunts newCard">
+        <img
+          class="res-img"
+          src="image/Chao-Chinese-Bistro.webp"
+          alt="pizza hut"
+        />
+        <div class="detail">
+          <h1 class="title">Chao-Chinese-Bistro</h1>
+          <p>Rating: ⭐4.3</p>
+          <p>Cuisines: Chinese, Asian</p>
+          <h6>
+            Address: Holiday Inn, Sardar Patel Marg, Bais Godam, Jaipur,
+            Rajasthan 302007
+          </h6>
+          <a
+            href="https://www.zomato.com/jaipur/chao-chinese-bistro-holiday-inn-jaipur-city-centre-bais-godam"
+            ><button class="order">Visit</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- <center><button id="clickMe" class="see-more">See more <img style=" width:30px;"src="image/down.png"/></button></center> -->
+    <div class="get-app container">
+      <div class="left">
+        <h3>Get Our App</h3>
+        <div>
+          <button class="android">
+            <img src="image/google-play-3.png" alt="google play" /> Android
+          </button>
+          <button class="ios">
+            <img src="image/apple.png" alt="apple" /> iOS
+          </button>
+        </div>
+      </div>
+      <div class="right">
+        <img src="image/phone-8.webp" alt="phone" />
+      </div>
+    </div>
+    <div class="footer">
+      <div class="idhar">
+        <h3>Contact Us</h3>
+        <div>
+          <p>Mobile No : 6739294758</p>
+          <p>Email : theAanyasKitchen@gmail.com</p>
+          <p>
+            Address : B-36 BHAIRU MEENA KA BAAG GUJAR GHATI, Amer Rd, Jal Mahal,
+            Jaipur, Rajasthan 302000
+          </p>
+        </div>
+      </div>
+      <div class="udar">
+        <img src="image/instagram.png" alt="" />
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
